@@ -1,0 +1,52 @@
+<html>
+    <head>
+        
+        <script src="jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="chat-box">
+            <div class="chat-box-header">
+                <h3>Furbulous Photo Playground</h3>
+                <p><i class="fa fa-times"></i></p>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-body-receive">
+                    <p>Hi, start typing your imagination</p>
+                    <span>12:00</span>
+                </div>
+                <div class="chat-box-body-send">
+                    <p>Oke.</p>
+                    <span>12:01</span>
+                </div>
+
+
+            </div>
+            <div id="chat-loading">Imagination being created...</div>
+            <div id="chat-preview">
+                Reference Image:
+                <img id="imgPreview" width="150" src="" />
+            </div>
+            <div class="chat-box-footer">
+                <input type="file" id="fileSelector" name="fileSelector" accept=".jpg,.png,.jpeg" hidden>
+                <!-- Icon as trigger -->
+                <label for="fileSelector" class="upload-icon">
+                    <i class="fa fa-image"></i>
+                </label>
+                
+                <input id="msgInput" placeholder="Enter your imagination" type="text" />
+                <i id="sendMsg" class="fa fa-paper-plane"></i>
+            </div>
+        </div>
+        
+        <div class="chat-button"><span></span></div>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="modal-close-button">&times;</span>
+                <h1>Add What you want here.</h1>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "mj-demo",
+  "version": "1.0.0",
+  "description": "demo app for generating AI pet images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sudo npx http-server",
+    "proxy": "lcp --proxyUrl http://localhost:3000",
+    "server":"node server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.2.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
